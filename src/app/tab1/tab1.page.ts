@@ -7,6 +7,16 @@ import { Component } from '@angular/core';
 })
 export class Tab1Page {
 
+  private altura: number;
+  private resultado: number;
+
   constructor() {}
 
+  calcula(){
+    this.resultado = (this.altura- 100) * 0.9;
+  }
+
+  resultadoHomem(): number{
+    return this.resultado;
+  }
 }

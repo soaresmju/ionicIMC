@@ -7,6 +7,17 @@ import { Component } from '@angular/core';
 })
 export class Tab3Page {
 
+  private peso: number;
+  private altura: number;
+  private resultado: number;
+
   constructor() {}
 
+  calcula(){
+    this.resultado = this.peso / (this.altura * this.altura);
+  }
+
+  resultadoImc(): number{
+    return this.resultado;
+  }
 }
